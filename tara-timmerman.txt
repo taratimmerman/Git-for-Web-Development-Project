@@ -1,47 +1,91 @@
-    Finished codepen: https://codepen.io/taratimmerman/pen/RwRVXMe?editors=1100
+    Finished codepen: https://codepen.io/taratimmerman/pen/RwRVXMe
     
-    1. What is Semantic HTML? 
+    1. What is Semantic HTML?
+        elements with meaning
     2. What is HTML used for? 
-    3. What is an attribute and where do we put it? 
+        HTML is what web browsers read. So it's used to describe to the browser what/how to display.
+    3. What is an attribute and where do we put it?
+        Attributes provide additonal info. Example: <img src="img.jpg" width="200" height="800">
     4. What is the h1 tag used for? How many times should I use it on a page?
+        h1 is used as the name/title of the page and should only be used once.
     5. Name two tags that have required attributes
-    6. What do we put in the head of our HTML document? 
-    7. What is an id? 
-    8. What elements can I add an id to? 
-    9. How many times can I use the same id on a page? 
-    10. What is a class? 
-    11. What elements can I add a class to? 
-    12. How many times can I use the same class on a page? 
+        <img> <a>
+    6. What do we put in the head of our HTML document?
+        Metadata, title, font links
+    7. What is an id?
+        A unique name for HTML elements
+    8. What elements can I add an id to?
+        <section> <h1> - <h6> <div> <img> <span>
+    9. How many times can I use the same id on a page?
+        Once
+    10. What is a class?
+        A name that can be used by mutliple HTML elements
+    11. What elements can I add a class to?
+        <section> <h1> - <h6> <div> <img> <span>
+    12. How many times can I use the same class on a page?
+        Unlimited!
     13. How do I get my link to open in a new tab?
-    14. What is the alt attribute in the image tag used for? 
+        target="_blank"
+    14. What is the alt attribute in the image tag used for?
+        Describes a photo for accessibility and SEO
     15. How do I reference an id?
+        Using the #
     16. What is the difference between a section and a div
-    17. What is CSS used for? 
+        <section> is semantic <div> is not
+    17. What is CSS used for?
+        Styling a web page
     18. How to we select an element? Example - every h2 on the page
+        h2 {}
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        <div class="city"> <h1 id="myHeader">My Header</h1>
     20. How do we select classes in CSS?
+        .class
     21. How do we select a p element with a single class of “human””?
-    22. What is a parent child selector? When would this be useful? 
+        p.class
+    22. What is a parent child selector? When would this be useful?
+        p:first-child | Selects every <p> element that is the first child of its parent
     23. How do you select all links within a div with the class of sidebar?
+        div.sidebar
     24. What is a pseudo selector?
+        selector:pseudo-class {}
     25. What do we use the change the spacing between lines?
+        line-height:
     26. What do we use to change the spacing between letters?
+        letter-spacing:
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        text-transform: capitalize;
     28. How do I add a 1px border around my div that is dotted and black?
-    29. How do I select everything on the page? 
+        div {
+            border: 1px dotted black;
+        }
+    29. How do I select everything on the page?
+        *
     30. How do I write a comment in CSS?
-    31. How do I find out what file I am in, when I am using the command line? 
+        /* Like this */
+    31. How do I find out what file I am in, when I am using the command line?
+        git checkout
     32. Using the command line - how do I see a list of files/folders in my current folder?
-    33. How do I remove a file via the command line? Why do I have to be careful with this? 
-    34. Why should I use version control? 
+        ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+        rm, there's sometimes no prompt and its gone-gone after deleting 
+    34. Why should I use version control?
+        so you can track changes to your code and collaborate with others
     35. How often should I commit to github?
-    36. What is the command we would use to push our repo up to github? 
-    37. Walk me through Lambda's git flow. 
+        everytime you make a major change or every 20 minutes
+    36. What is the command we would use to push our repo up to github?
+        git push origin firstnae-lastname
+    37. Walk me through Lambda's git flow.
+        git clone, cd, git checkout -b, touch, git status, git add., git commit -m, git push origin
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
-    2. What happens when an element is positioned absolutely? 
-    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+        inline elements only take up the space they need, block elements start a new line on either side
+    2. What happens when an element is positioned absolutely?
+        an element is positioned relative to the nearest positioned ancestor
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+        <span>
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
-    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+        block: 1. <form> 2. <header> 3. <footer> | inline: 1. <span> 2. <img>
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+         all webpage elements are shaped like a box and the attributes of a box are like russian nesting dolls. It's a pain in the neck to do all the math for each area and consider the responsiveness of the site. Soo you can use flex box instead.
